@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*estilização do Menu*/
+#menu {
+    background-color: #C78CD0;
+    overflow: hidden;
+  }
+  
+#menu a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #FCE9C9;
+  text-align: center;
+  float: left; 
+  padding: 14px 16px;
+  }
+  
+  /* Adicionar cor de links ao passar o mouse */
+#menu a:hover {
+    background-color: #FCCBDE;
+    color: #F19C9F;
+  }
+
+/*index.html*/
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-color: #FCCBDE;
+}
+
+.centro{
+  text-align: center;
+  }
+
+.justificar{
+    text-align: justify;
+}
+
+.p-30{
+  padding: 30px;
+}
+
+/*
+.br-50{
+  border-radius: 50%;
+}
+
+.wh-300{
+  width: 300px;
+  height: 300px;
+}*/
+
+.sobre-mim{
+  margin-left: 10%;
+}
+
+.titulo{
+  color: #F19C9F;
+}
+
+#may-pic{
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 150px;
+    border-radius:100%; 
+}
+
+/*flexbox*/
+.flex-container{
+  display: flex;
+  flex-flow: row wrap; 
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.flex-container > div {
+    width: 50%;
+}
+
+.justificar {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.flex-container > div > img { 
+  width: 70%;
+  margin-left: 29%;
+  align-items: flex-start;
+  border-radius: 2%;
+  border: 3px solid #FCE9C9;
+}
+
+/* para alterar o tamanho da foto
+.wh{
+  width: 500px;
+  height: 500px;
+}*/
+
+/*Estilização do vídeo*/
+
+iframe.video{
+  margin-bottom: 50px;
+  border: 5px solid #FCE9C9;
+  border-radius: 2%;
+  border-color: #FCE9C9;
+}
+
+/*Aplicando estilo à página de contato*/
+
+.titulo-contato{
+  color: #F19C9F;
+  margin-bottom: 2%;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 93%;
+  padding: 5px;
+  border: 2px solid #FCE9C9;
+  border-radius: 2%;
+  border-color: #FCE9C9;
+}
+
+textarea {
+  margin-top: 10px;
+  width: 91%;
+  padding: 10px;
+  border: 2px solid #FCE9C9;
+  border-radius: 2%;
+  border-color: #FCE9C9;
+}
+
+button{
+  margin-top: 20px;
+  width: 20%;
+  height: 30px; 
+  border: 2px solid #FCE9C9;
+  background-color: #FCE9C9;
+  color:#C78CD0; 
+}
+
+button:hover {
+  border-color: #F19C9F;
+  background-color: #F19C9F;
+  color: #FCE9C9 ;
+}
+
+/*Localização - mapa */
+
+.titulo-contato{
+  margin-top: 5%;
+  color: #F19C9F;
+}
+
+.mapa{
+  border: 2px solid #FCE9C9;
+  border-radius: 2%;
+  margin-top: 10px;
+  margin-bottom: 48px;
+}
+
+/*Footer*/
+.rede-social{
+  width: 50px;
+  height: 50px;
+}

@@ -5,43 +5,67 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contato</title>
-        <link rel="icon" type="image/x-icon" href="/assets/img/1985836.png">
+        <link rel="icon" type="image/x-icon" href="/assets/img/icone-page.png">
         <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     </head>
     <body>
-        <div class="menu">
+          
+        <div id="menu">
             <a href="index.html">Home</a>
             <a href="contato.html">Contato</a>
-            <a href="https://github.com/maiurysousa" target="_blank">GitHub</a>
-        </div>    
-
-        <div class="flex-container-contato">
+        </div>
             
-            <div>  
-                <h2 class="titulo-contato">Entre em contato comigo</h2> 
-                <form action="">
+        <h1 class="titulo-contato centro">Entre em contato comigo</h1> 
+                      
+        <div class="flex-container mb-50">
+            <div>
+                <form>
+                    <h2>Mande uma Mensagem</h2>
+
                     <label for="nome">Nome:</label>
-                    <input type="text" class="nome">
+                    <input type="text" class="nome" onkeyup="validaNome()">
                     <label for="email">E-mail:</label>
-                    <input  type="email" class="email">
+                    <input  type="email" class="email" onkeyup="validaEmail()">
                     <label for="assunto">Assunto:</label>
-                    <textarea  type="text" class="assunto" cols="60" rows="5"></textarea>
-                    <button>Enviar</button>
+                    <textarea  type="text" class="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                    <button onclick="enviar()">Enviar</button>
                 </form>
             </div>
 
-            <div>
-            <h2 class="localizacao">Endereço:</h2>
+            <div class="ml-50">
+            <h2>Endereço:</h2>
             <p>Lagoa da Conceição - Florianópolis - SC</p>
 
-            <iframe
+            <iframe class="mapa"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3605863.718095812!2d-46.4946922!3d-28.0442967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273ea848636a4d%3A0x6f700ac19098c89d!2sLagoa%20da%20Concei%C3%A7%C3%A3o%2C%20Florian%C3%B3polis%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1637679804147!5m2!1spt-BR!2sbr" 
-            width="500" 
+            width="520" 
             height="250" 
             allowfullscreen="" 
             loading="lazy"
             ></iframe>
-        </div>
+        </div>        
+
+        <hr>
+
+        <footer>
+            <div class="flex-container">  
+
+                <a href="https://www.linkedin.com/in/maiury-sousa-71a260192/" target="_blank">
+                    <img class="rede-social" src="/assets/img/linkedin.png" alt="Logo do Linkedin">
+                </a>
+
+                <a href="https://github.com/maiurysousa" target="_blank">
+                  <img class="rede-social p-30" src="/assets/img/github.png" alt="Logo do Intagram">
+                </a>
+               
+            </div>
+      
+            <p class="centro">
+               Todos os direitos reservdos: Maiury Sousa &copy
+            </p> 
+         </footer>
+      
+        <script src="assets/js/script.js"></script>
     
     </body>
 </html>
