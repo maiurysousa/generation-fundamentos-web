@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contato</title>
-        <link rel="icon" type="image/x-icon" href="/assets/img/icone-page.png">
+        <link rel="icon" type="image/x-icon" href="/assets/img/icone-page(1).png">
         <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     </head>
     <body>
@@ -23,11 +23,14 @@
                     <h2>Mande uma Mensagem</h2>
 
                     <label for="nome">Nome:</label>
-                    <input type="text" class="nome" onkeyup="validaNome()">
+                    <input type="text" id="nome" onkeyup="validaNome()">
+                    <div id="txtNome"></div>
                     <label for="email">E-mail:</label>
-                    <input  type="email" class="email" onkeyup="validaEmail()">
+                    <input  type="email" id="email" onkeyup="validaEmail()">
+                    <div id="txtEmail"></div>
                     <label for="assunto">Assunto:</label>
-                    <textarea  type="text" class="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                    <textarea  type="text" id="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                    <div id="txtAssunto"></div>
                     <button onclick="enviar()">Enviar</button>
                 </form>
             </div>
@@ -36,12 +39,14 @@
             <h2>Endereço:</h2>
             <p>Lagoa da Conceição - Florianópolis - SC</p>
 
-            <iframe class="mapa"
+            <iframe id="mapa" class="mapa"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3605863.718095812!2d-46.4946922!3d-28.0442967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273ea848636a4d%3A0x6f700ac19098c89d!2sLagoa%20da%20Concei%C3%A7%C3%A3o%2C%20Florian%C3%B3polis%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1637679804147!5m2!1spt-BR!2sbr" 
             width="520" 
             height="250" 
             allowfullscreen="" 
             loading="lazy"
+            onmousemove="mapaZoom()"
+            onmouseout="mapaNormal()"
             ></iframe>
         </div>        
 
@@ -65,7 +70,7 @@
             </p> 
          </footer>
       
-        <script src="assets/js/script.js"></script>
+         <script src="/assets/js/script.js"></script>
     
     </body>
 </html>
