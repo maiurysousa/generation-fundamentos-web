@@ -14,7 +14,7 @@
    <hr>
   <img height="380" src="https://github.com/maiurysousa/generation-fundamentos-web/blob/main/assets/img/2021-12-04.png?raw=true"/>
   <img height="380" src="https://github.com/maiurysousa/generation-fundamentos-web/blob/main/assets/img/2021-12-04%20(1).png?raw=true"/>
-  <img height="372" src="https://github.com/maiurysousa/generation-fundamentos-web/blob/main/assets/img/2021-12-04%20(2).png?raw=true"/>
+  <img height="380" src="https://github.com/maiurysousa/generation-fundamentos-web/blob/main/assets/img/2021-12-04%20(2).png?raw=true"/>
 </div>
   
 
