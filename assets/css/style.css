@@ -41,6 +41,10 @@ text-align: center;
 padding: 30px;
 }
 
+.p-10{
+  padding-top: 15px;
+}
+
 /*
 .br-50{
 border-radius: 50%;
